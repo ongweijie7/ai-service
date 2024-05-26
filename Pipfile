@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+fastapi = "*"
+sounddevice = "*"
+openai-whisper = "*"
+transformers = "*"
+google-cloud-texttospeech = "*"
+openai = "*"
+simpleaudio = "*"
+pydub = "*"
+soundfile = "*"
+requests = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+start = "uvicorn main:app --host localhost --port 8000 --reload"
